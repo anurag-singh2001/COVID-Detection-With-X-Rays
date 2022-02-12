@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="stylesheet" href="./resources/css/style.css" />
     <title>COVID-19 STATS - JAVASCRIPT</title>
   </head>
@@ -60,14 +60,13 @@
           <canvas id="axes_line_chart"></canvas>
         </div>
       </div>
-
+      <section style="color: #ffffff; align-self: center;">
+        <h3 >UPLOAD YOUR LUNG X-RAY FOR COVID DETECTION</h3>
+        <input type="file" id="image_input">
+        <div id="display_image"></div>
+        <button onclick="window.print()">Print this page</button>
+      </section>
     </main>
-    <section style="color: #ffffff; align-content: center;">
-      <h3>UPLOAD YOUR LUNG X-RAY FOR COVID DETECTION</h3>
-      <input type="file" id="image_input">
-      
-      <div id="display_image"></div>
-    </section>
 
     <footer>
       <div class="footer-container">
