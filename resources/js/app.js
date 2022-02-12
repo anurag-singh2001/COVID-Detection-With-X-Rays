@@ -113,11 +113,11 @@ function updateStats() {
   const total_cases = cases_list[cases_list.length - 1];
   const new_confirmed_cases = total_cases - cases_list[cases_list.length - 2];
 
-  const total_recovered = recovered_list[recovered_list.length - 1];
-  const new_recovered_cases = total_recovered - recovered_list[recovered_list.length - 2];
-
   const total_deaths = deaths_list[deaths_list.length - 1];
   const new_deaths_cases = total_deaths - deaths_list[deaths_list.length - 2];
+
+  const total_recovered = total_cases - total_deaths;
+  const new_recovered_cases = new_confirmed_cases - new_deaths_cases;
 
   country_name_element.innerHTML = user_country;
   total_cases_element.innerHTML = total_cases;
